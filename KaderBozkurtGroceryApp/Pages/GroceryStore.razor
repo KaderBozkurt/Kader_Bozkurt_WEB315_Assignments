@@ -1,0 +1,61 @@
+﻿@page "/grocerystore"
+
+
+<h1>GroceryStore</h1>
+Welcome to My Grocery Store.
+<ul>
+    @foreach (var grocerystore in grocerystores)
+    {
+        <li>@grocerystore.Bakery</li>
+    }
+</ul>
+
+<ul>
+    @foreach (var grocerystore in grocerystores)
+    {
+        <li>@grocerystore.DryGood
+            <ul>@foreach (var Grocerystore in Grocerystores){
+            <li>@Grocerystore.Title</li>}
+        </ul></li>
+    }
+</ul>
+<ul>
+    @foreach (var grocerystore in grocerystores)
+    {
+        <li>@grocerystore.Fruit</li>
+    }
+</ul>
+
+<button @onclick="AddGroceryStore">+Add New Food</button><br />
+
+<label>Name 
+<input placeholder="" @bind="newGroceryStore"/>
+<button @onclick="AddGroceryStore">Add </button></label>
+<label>Quantity
+<input placeholder="" @bind="newQuantity" />
+<button @onclick="AddGroceryStore">Add </button></label><br />
+<label>Isle
+<input placeholder="" @bind="newIsle" />
+<button @onclick="AddGroceryStore">Add </button></label>
+<label>Price
+<input placeholder="" @bind="newPrice" />
+<button @onclick="AddGroceryStore">Add </button></label>
+
+
+@code {
+    private List<GroceryIsle> grocerystores = new();
+    private List<FoodItem> Grocerystores = new();
+    private decimal newPrice;
+    private int newQuantity;
+    private string newIsle;
+
+
+    
+    private string newGroceryStore;
+    private void AddGroceryStore()
+    {
+        
+    }
+    
+}
+
