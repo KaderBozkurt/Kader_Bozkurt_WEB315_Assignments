@@ -3,59 +3,100 @@
 
 <h1>GroceryStore</h1>
 Welcome to My Grocery Store.
-<ul>
+
+<h3>+Add New Food </h3><br />
+
+<label>IsleNumber 
+<input placeholder="" @bind="newGroceryStoreIsleNumber"/></label><br />
+<label>IsleName
+<input placeholder="" @bind="newGroceryStoreIsle" /></label><br />
+<label>Product 
+<input placeholder="" @bind="newGroceryStoreProduct" /></label><br />
+<label>Quantity
+<input role="status" @bind = "currentCount" />
+
+<button class="btn btn-primary" @onclick="IncrementCount">Increase</button>
+<button class="btn btn-primary" @onclick="DecreaseCount">Decrease</button></label><br />
+<label>Price
+<input placeholder="" @bind="newGroceryStorePrice" /></label><br />
+<button @onclick="AddGroceryStore">Add </button><br />
+
+<ul><br />
+
     @foreach (var grocerystore in grocerystores)
     {
         <li>@grocerystore.Bakery</li>
+                       
     }
 </ul>
-
-<ul>
+<ul><br />
     @foreach (var grocerystore in grocerystores)
     {
-        <li>@grocerystore.DryGood
-            <ul>@foreach (var Grocerystore in Grocerystores){
-            <li>@Grocerystore.Title</li>}
-        </ul></li>
+        <li>@grocerystore.DryGood</li>
+                       
     }
 </ul>
-<ul>
+<ul><br />
     @foreach (var grocerystore in grocerystores)
     {
         <li>@grocerystore.Fruit</li>
+                       
     }
 </ul>
-
-<button @onclick="AddGroceryStore">+Add New Food</button><br />
-
-<label>Name 
-<input placeholder="" @bind="newGroceryStore"/>
-<button @onclick="AddGroceryStore">Add </button></label>
-<label>Quantity
-<input placeholder="" @bind="newQuantity" />
-<button @onclick="AddGroceryStore">Add </button></label><br />
-<label>Isle
-<input placeholder="" @bind="newIsle" />
-<button @onclick="AddGroceryStore">Add </button></label>
-<label>Price
-<input placeholder="" @bind="newPrice" />
-<button @onclick="AddGroceryStore">Add </button></label>
 
 
 @code {
     private List<GroceryIsle> grocerystores = new();
-    private List<FoodItem> Grocerystores = new();
-    private decimal newPrice;
-    private int newQuantity;
-    private string newIsle;
-
-
     
-    private string newGroceryStore;
+    private decimal newGroceryStorePrice;
+    private int newGroceryStoreQuantity;
+    private string newGroceryStoreIsle;    
+    private string newGroceryStoreProduct;
+    private int newGroceryStoreIsleNumber;
     private void AddGroceryStore()
     {
+       
+            GroceryIsle newBakery; // if we end up making a new item, we want to store it here
+
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle)) // does the new todo title contain a value?
+        {
+            // if it does, we add it to the list
+            newBakery = new GroceryIsle
+            {
+                Bakery = newGroceryStoreIsle
+              
+            };
+             grocerystores.Add(newBakery);
+            newGroceryStoreIsle= ""; // string.Empty;
+        }
+
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreProduct))
+        {
+            grocerystores.Add(new GroceryIsle { DryGood = newGroceryStoreProduct });
+            newGroceryStoreProduct = string.Empty;
+        }
+        
+       
+    }
+
+private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        if (currentCount == 20){   
+            return;}
+         currentCount++;
         
     }
-    
+    private void DecreaseCount()
+    {
+        if (currentCount == 0){
+            return;}
+         currentCount--;
+    }
 }
+    
+    
+    
+
 

@@ -91,22 +91,56 @@ using KaderBozkurtGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "C:\Users\User\KaderBozkurtGrocery\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtGroceryApp\Pages\GroceryStore.razor"
+#line 48 "C:\Users\User\KaderBozkurtGrocery\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtGroceryApp\Pages\GroceryStore.razor"
        
     private List<GroceryIsle> grocerystores = new();
-    private List<FoodItem> Grocerystores = new();
-    private decimal newPrice;
-    private int newQuantity;
-    private string newIsle;
-
-
     
-    private string newGroceryStore;
+    private decimal newGroceryStorePrice;
+    private int newGroceryStoreQuantity;
+    private string newGroceryStoreIsle;    
+    private string newGroceryStoreProduct;
+    private int newGroceryStoreIsleNumber;
     private void AddGroceryStore()
     {
+       
+            GroceryIsle newBakery; // if we end up making a new item, we want to store it here
+
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle)) // does the new todo title contain a value?
+        {
+            // if it does, we add it to the list
+            newBakery = new GroceryIsle
+            {
+                Bakery = newGroceryStoreIsle
+              
+            };
+             grocerystores.Add(newBakery);
+            newGroceryStoreIsle= ""; // string.Empty;
+        }
+
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreProduct))
+        {
+            grocerystores.Add(new GroceryIsle { DryGood = newGroceryStoreProduct });
+            newGroceryStoreProduct = string.Empty;
+        }
+        
+       
+    }
+
+private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        if (currentCount == 20){   
+            return;}
+         currentCount++;
         
     }
-    
+    private void DecreaseCount()
+    {
+        if (currentCount == 0){
+            return;}
+         currentCount--;
+    }
 
 #line default
 #line hidden

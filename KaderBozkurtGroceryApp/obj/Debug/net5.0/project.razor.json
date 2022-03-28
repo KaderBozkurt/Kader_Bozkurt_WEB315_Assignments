@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 2096192602,
+        "Kind": "Components.Component",
+        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
+        "AssemblyName": "KaderBozkurtGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 1619719441,
+        "Kind": "Components.Component",
+        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
+        "AssemblyName": "KaderBozkurtGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "KaderBozkurtGroceryApp.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -855365525,
         "Kind": "Components.Component",
         "Name": "KaderBozkurtGroceryApp.Pages.Counter",
@@ -74,39 +107,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "KaderBozkurtGroceryApp.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2096192602,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1619719441,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "KaderBozkurtGroceryApp.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
