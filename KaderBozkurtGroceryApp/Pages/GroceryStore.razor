@@ -4,50 +4,66 @@
 <h1>GroceryStore</h1>
 Welcome to My Grocery Store.
 
-<h3>+Add New Food </h3><br />
+<br /><br /><h4>+Add New Food </h4><br />
 
-<label>IsleNumber 
-<input placeholder="" @bind="newGroceryStoreIsleNumber"/></label><br />
-<label>IsleName
-<input placeholder="" @bind="newGroceryStoreIsle" /></label><br />
-<label>Product 
-<input placeholder="" @bind="newGroceryStoreProduct" /></label><br />
-<label>Quantity
-<input role="status" @bind = "currentCount" />
+<label>IsleNumber </label><br />
+<input placeholder="" @bind="newGroceryStoreIsleNumber"/><br />
+<label>IsleName</label><br />
+<input placeholder="" @bind="newGroceryStoreIsle" /><br />
+<label>Product</label><br />
+<input placeholder="" @bind="newGroceryStoreProduct" /><br />
+<label>Quantity</label><br />
+<input placeholder="" @bind="newGroceryStoreQuantity" /><br />
+<label>Price</label><br />
+<input placeholder="" @bind="newGroceryStorePrice" /><br />
+<br /><button @onclick="AddGroceryStore">Add </button><br />
 
-<button class="btn btn-primary" @onclick="IncrementCount">Increase</button>
-<button class="btn btn-primary" @onclick="DecreaseCount">Decrease</button></label><br />
-<label>Price
-<input placeholder="" @bind="newGroceryStorePrice" /></label><br />
-<button @onclick="AddGroceryStore">Add </button><br />
 
-<ul><br />
 
-    @foreach (var grocerystore in grocerystores)
-    {
-        <li>@grocerystore.Bakery</li>
-                       
-    }
-</ul>
-<ul><br />
-    @foreach (var grocerystore in grocerystores)
-    {
-        <li>@grocerystore.DryGood</li>
-                       
-    }
-</ul>
-<ul><br />
-    @foreach (var grocerystore in grocerystores)
-    {
-        <li>@grocerystore.Fruit</li>
-                       
-    }
-</ul>
 
+@if (grocerystores == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (!grocerystores.Any())
+{
+    <p><em> Please add some Food.</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IsleNumber</th>
+                <th>IsleName</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity </th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var grocerystore in grocerystores)
+            {
+                <tr>
+                    <td>@grocerystore.IsleNumber </td>
+                    <td>@grocerystore.IsleName</td>
+                     <td>@grocerystore.Product</td>
+                     <td>@grocerystore.Price</td>
+                    <td> @currentCount</td>
+                    <button class="btn btn-primary" @onclick="IncrementCount">Increase</button>
+                     <button class="btn btn-primary" @onclick="DecreaseCount">Decrease</button><br />
+                    
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
 @code {
-    private List<GroceryIsle> grocerystores = new();
-    
+    private List<GroceryIsle> grocerystores = new();    
     private decimal newGroceryStorePrice;
     private int newGroceryStoreQuantity;
     private string newGroceryStoreIsle;    
@@ -56,27 +72,43 @@ Welcome to My Grocery Store.
     private void AddGroceryStore()
     {
        
-            GroceryIsle newBakery; // if we end up making a new item, we want to store it here
+            GroceryIsle newIsleName; // if we end up making a new item, we want to store it here
 
         if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle)) // does the new todo title contain a value?
         {
             // if it does, we add it to the list
-            newBakery = new GroceryIsle
+            newIsleName = new GroceryIsle
+            
             {
-                Bakery = newGroceryStoreIsle
+                IsleName = newGroceryStoreIsle
               
             };
-             grocerystores.Add(newBakery);
+             grocerystores.Add(newIsleName);
             newGroceryStoreIsle= ""; // string.Empty;
         }
 
-        if (!string.IsNullOrWhiteSpace(newGroceryStoreProduct))
+         
+         
+            GroceryIsle newProduct;
+            
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle))
         {
-            grocerystores.Add(new GroceryIsle { DryGood = newGroceryStoreProduct });
-            newGroceryStoreProduct = string.Empty;
+           newProduct = new GroceryIsle
+            {
+               Product = newGroceryStoreIsle
+              
+            };
+             grocerystores.Add(newProduct);
+            newGroceryStoreIsle= ""; // string.Empty;
         }
         
-       
+             
+    }
+    private void ToggleGroceryStore(GroceryIsle Islenumber)
+    {
+        //First find the item
+        //var grocerystore = grocerystores.First(x => x.IsleNumber == Islenumber);
+       // grocerystore.IsComplete = !grocerystore.IsComplete;
     }
 
 private int currentCount = 0;

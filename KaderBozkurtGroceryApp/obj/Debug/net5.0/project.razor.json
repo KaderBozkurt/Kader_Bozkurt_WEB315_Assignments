@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 2096192602,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1619719441,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "KaderBozkurtGroceryApp.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -855365525,
         "Kind": "Components.Component",
         "Name": "KaderBozkurtGroceryApp.Pages.Counter",
@@ -78,35 +45,35 @@
         }
       },
       {
-        "HashCode": 92877606,
+        "HashCode": 2096192602,
         "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.Index",
+        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
         "AssemblyName": "KaderBozkurtGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.Index"
+          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData"
         }
       },
       {
-        "HashCode": 1927311056,
+        "HashCode": 1619719441,
         "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Pages.Index",
+        "Name": "KaderBozkurtGroceryApp.Pages.FetchData",
         "AssemblyName": "KaderBozkurtGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "KaderBozkurtGroceryApp.Pages.Index"
+            "TagName": "KaderBozkurtGroceryApp.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.Index",
+          "Common.TypeName": "KaderBozkurtGroceryApp.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -140,6 +107,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "KaderBozkurtGroceryApp.Pages.GroceryStore",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1019606808,
+        "Kind": "Components.Component",
+        "Name": "KaderBozkurtGroceryApp.App",
+        "AssemblyName": "KaderBozkurtGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "KaderBozkurtGroceryApp.App"
+        }
+      },
+      {
+        "HashCode": 170494367,
+        "Kind": "Components.Component",
+        "Name": "KaderBozkurtGroceryApp.App",
+        "AssemblyName": "KaderBozkurtGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "KaderBozkurtGroceryApp.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "KaderBozkurtGroceryApp.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -197,102 +197,6 @@
         }
       },
       {
-        "HashCode": 609764888,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Shared.MainLayout",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": -1994230796,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.Shared.MainLayout",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "KaderBozkurtGroceryApp.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 849541396,
-        "Kind": "Components.ChildContent",
-        "Name": "KaderBozkurtGroceryApp.Shared.MainLayout.Body",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 493545690,
-        "Kind": "Components.ChildContent",
-        "Name": "KaderBozkurtGroceryApp.Shared.MainLayout.Body",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "KaderBozkurtGroceryApp.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "KaderBozkurtGroceryApp.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 176976450,
         "Kind": "Components.Component",
         "Name": "KaderBozkurtGroceryApp.Shared.NavMenu",
@@ -322,39 +226,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "KaderBozkurtGroceryApp.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1019606808,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.App",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.App"
-        }
-      },
-      {
-        "HashCode": 170494367,
-        "Kind": "Components.Component",
-        "Name": "KaderBozkurtGroceryApp.App",
-        "AssemblyName": "KaderBozkurtGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "KaderBozkurtGroceryApp.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "KaderBozkurtGroceryApp.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

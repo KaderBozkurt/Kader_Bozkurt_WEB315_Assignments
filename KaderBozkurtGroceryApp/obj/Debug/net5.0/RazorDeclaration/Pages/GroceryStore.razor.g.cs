@@ -91,10 +91,9 @@ using KaderBozkurtGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "C:\Users\User\KaderBozkurtGrocery\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtGroceryApp\Pages\GroceryStore.razor"
+#line 65 "C:\Users\User\KaderBozkurtGrocery\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtGroceryApp\Pages\GroceryStore.razor"
        
-    private List<GroceryIsle> grocerystores = new();
-    
+    private List<GroceryIsle> grocerystores = new();    
     private decimal newGroceryStorePrice;
     private int newGroceryStoreQuantity;
     private string newGroceryStoreIsle;    
@@ -103,27 +102,43 @@ using KaderBozkurtGroceryApp.Shared;
     private void AddGroceryStore()
     {
        
-            GroceryIsle newBakery; // if we end up making a new item, we want to store it here
+            GroceryIsle newIsleName; // if we end up making a new item, we want to store it here
 
         if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle)) // does the new todo title contain a value?
         {
             // if it does, we add it to the list
-            newBakery = new GroceryIsle
+            newIsleName = new GroceryIsle
+            
             {
-                Bakery = newGroceryStoreIsle
+                IsleName = newGroceryStoreIsle
               
             };
-             grocerystores.Add(newBakery);
+             grocerystores.Add(newIsleName);
             newGroceryStoreIsle= ""; // string.Empty;
         }
 
-        if (!string.IsNullOrWhiteSpace(newGroceryStoreProduct))
+         
+         
+            GroceryIsle newProduct;
+            
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreIsle))
         {
-            grocerystores.Add(new GroceryIsle { DryGood = newGroceryStoreProduct });
-            newGroceryStoreProduct = string.Empty;
+           newProduct = new GroceryIsle
+            {
+               Product = newGroceryStoreIsle
+              
+            };
+             grocerystores.Add(newProduct);
+            newGroceryStoreIsle= ""; // string.Empty;
         }
         
-       
+             
+    }
+    private void ToggleGroceryStore(GroceryIsle Islenumber)
+    {
+        //First find the item
+        //var grocerystore = grocerystores.First(x => x.IsleNumber == Islenumber);
+       // grocerystore.IsComplete = !grocerystore.IsComplete;
     }
 
 private int currentCount = 0;
