@@ -1,0 +1,12 @@
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\bin\Debug\net5.0\KaderBozkurtChat.Shared.deps.json
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\bin\Debug\net5.0\KaderBozkurtChat.Shared.dll
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\bin\Debug\net5.0\ref\KaderBozkurtChat.Shared.dll
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\bin\Debug\net5.0\KaderBozkurtChat.Shared.pdb
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.csproj.AssemblyReference.cache
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.AssemblyInfoInputs.cache
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.AssemblyInfo.cs
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.csproj.CoreCompileInputs.cache
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.dll
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\ref\KaderBozkurtChat.Shared.dll
+C:\Users\User\KaderBozkurtChat\Kader_Bozkurt_WEB315_Assignments\KaderBozkurtChat\Shared\obj\Debug\net5.0\KaderBozkurtChat.Shared.pdb
